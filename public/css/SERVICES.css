@@ -1,0 +1,111 @@
+h1{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.navbar{
+    background-color: #00cba9c8 !important;
+}
+
+.para{
+    font-size: 1.05rem;
+    color: #666;
+    text-align: justify
+}
+
+#confetti{
+    display: none;
+}
+
+@keyframes bounce {
+0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+40% {transform: translateY(-20px);}
+60% {transform: translateY(-10px);}}
+
+.bounce-once {animation: bounce 1.5s 0.1s 1;}
+
+
+.card-1{
+    border-left: 6px solid steelblue !important;
+    border-radius: 0 5px 5px 0 !important;
+    box-shadow: 5px 5px 10px steelblue;
+    background-color: aliceblue !important;
+}
+
+.card-2{
+    border-left: 6px solid #e9d717 !important;
+    border-radius: 0 5px 5px 0 !important;
+    box-shadow: 5px 5px 10px #e9d81799;
+    background-color: rgba(238, 232, 170, 0.34) !important;
+}
+
+
+.card-3{
+    border-left: 6px solid orchid !important;
+    border-radius: 0 5px 5px 0 !important;
+    box-shadow: 5px 5px 10px rgba(218, 112, 214, 0.744);
+    background-color: rgba(218, 112, 214, 0.18) !important;
+}
+
+.card-4{
+    border-left: 6px solid rgba(255, 68, 0, 0.8) !important;
+    border-radius: 0 5px 5px 0 !important;
+    box-shadow: 5px 5px 10px  rgba(255, 68, 0, 0.8) !important;
+    background-color: rgba(255, 166, 0, 0.175) !important;
+}
+
+/* query */
+.query a{
+    text-decoration: none;
+    color: black;
+}
+
+.query {
+    animation: scaleAnimation 2s infinite;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    background-color: #00e3bdc8;
+    border: 1px solid #008772;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+  }
+
+  .query:hover {
+    background-color: #00ba9bc8;
+  }
+
+
+
+@keyframes scaleAnimation {
+    0%,100% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+}
+  
+/* quiz */
+  
+
+form label{
+    font-size: 17px;
+    line-height: 28px;
+  }
+
+
+  .accept{
+    font-size: 1.1rem;
+    color: #fff;
+    border-radius:5px;
+    border:solid 1px #005f4f;
+    background:#00cba9;
+    padding:5px 10px;
+    box-shadow: 0px 6px 0px #008e76;
+  }
+
+  .QnA{
+    color: #00bb9c;
+  }
+  .choice{
+    padding-left: 10px;
+  }

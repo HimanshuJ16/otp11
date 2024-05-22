@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fuel your financial knowledge with HSJN FinWisdom's Quiz. Test your trading acumen and enhance your education.">
+  <title>Financial Quiz - HSJN FinWisdom</title>
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/SERVICES.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <style>
+    /* Add some basic styling for the modal */
+    
+    a{
+        text-decoration: none;
+    }
+    
+    #resultModal {
+     width: 250px;
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+     border-radius: 10px;
+    }
+
+    #resultModal h2 {
+      margin-top: 0;
+      text-align: center;
+    }
+
+    #overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 900;
+      transition: opacity 0.5s ease;
+    }
+
+  </style>
+  <style>
+    .close{
+      background-color: crimson;
+      color: #fff;
+      border-radius: 5px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 50%;
+      margin: auto;
+    }
+    
+    table, th, td {
+      border: 1px solid #888888;
+      text-align: left;
+    }
+    
+    th, td {
+      padding: 10px;
+    }
+        
+    tr:nth-child(odd) {
+      background-color: #dadadadc;
+    }
+
+  </style>
+</head>
+
+<body>
+<!-- start -->
+
+<nav class="navbar">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1">HSJN FinWisdom</span>
+    </div>
+</nav>
+  <br>
+<h1>Financial Literacy Quiz <i class="fa-solid fa-hourglass-half bounce-once"></i></h1>
+<hr>
+<!-- main -->
+
+<div class="container">
+
+    <form id="quizForm" class="mx-auto px-5">
+    
+        <fieldset>
+          <legend><span class="QnA"><i class="fa-solid fa-q"></i>1.</span> What does the term IPO stand for in the context of the stock market?</legend>
+          <label><input type="radio" name="q1" value="a"><span class="choice">International Portfolio Offering</span></label><br>
+          <label><input type="radio" name="q1" value="b"><span class="choice">Initial Public Offering</span></label><br>
+          <label><input type="radio" name="q1" value="c"><span class="choice">Investor Purchase Order</span></label><br>
+          <label><input type="radio" name="q1" value="d"><span class="choice">Institutional Placement Order</span></label><br><br>
+      </fieldset>
+      <hr><br>
+      
+      <fieldset>
+          <legend><span class="QnA"><i class="fa-solid fa-q"></i>2.</span>What is the function of a stock exchange?</legend>
+          <label><input type="radio" name="q2" value="a"><span class="choice">Issue new stocks</span></label><br>
+          <label><input type="radio" name="q2" value="b"><span class="choice">Provide loans to companies</span></label><br>
+          <label><input type="radio" name="q2" value="c"><span class="choice">Facilitate the buying/selling of stocks</span></label><br>
+          <label><input type="radio" name="q2" value="d"><span class="choice">Set interest rates</span></label><br><br>
+      </fieldset>
+      <hr><br>
+      
+      <fieldset>
+          <legend><span class="QnA"><i class="fa-solid fa-q"></i>3.</span>Which index reflects the performance of the top 30 companies listed on the Bombay Stock Exchange (BSE) in India?</legend>
+          <label><input type="radio" name="q3" value="a"><span class="choice"> Nifty 50</span></label><br>
+          <label><input type="radio" name="q3" value="b"><span class="choice">Sensex</span></label><br>
+          <label><input type="radio" name="q3" value="c"><span class="choice">Nifty Bank</span></label><br>
+          <label><input type="radio" name="q3" value="d"><span class="choice">BSE Midcap</span></label><br><br>
+      </fieldset>
+      <hr><br>
+      
+      <fieldset>
+          <legend><span class="QnA"><i class="fa-solid fa-q"></i>4.</span>Which cryptocurrency is often referred to as <i>digital gold</i> due to its store of value characteristics?</legend>
+          <label><input type="radio" name="q4" value="a"><span class="choice">Bitcoin (BTC)</span></label><br>
+          <label><input type="radio" name="q4" value="b"><span class="choice">Ethereum (ETH)</span></label><br>
+          <label><input type="radio" name="q4" value="c"><span class="choice">Ripple (XRP)</span></label><br>
+          <label><input type="radio" name="q4" value="d"><span class="choice">Litecoin (LTC)</span></label><br><br>
+      </fieldset>
+      <hr><br>
+      
+      <fieldset>
+          <legend><span class="QnA"><i class="fa-solid fa-q"></i>5.</span>What does the term <i>bull market</i> mean in the context of the stock market?</legend>
+          <label><input type="radio" name="q5" value="a"><span class="choice">Market with decreasing stock prices</span></label><br>
+          <label><input type="radio" name="q5" value="b"><span class="choice">Market with increasing stock prices</span></label><br>
+          <label><input type="radio" name="q5" value="c"><span class="choice">Market with stable stock prices</span></label><br>
+          <label><input type="radio" name="q5" value="d"><span class="choice">Market with high volatility</span></label><br><br>
+      </fieldset>
+      <hr><br>
+      
+      <fieldset>
+          <legend><span class="QnA"><i class="fa-solid fa-q"></i>6.</span>What is the term used to describe the difference between the bid price and the ask price of a security?</legend>
+          <label><input type="radio" name="q6" value="a"><span class="choice">Spread</span></label><br>
+          <label><input type="radio" name="q6" value="b"><span class="choice">Margin</span></label><br>
+          <label><input type="radio" name="q6" value="c"><span class="choice">Gap</span></label><br>
+          <label><input type="radio" name="q6" value="d"><span class="choice">Range</span></label><br><br>
+      </fieldset>
+      <hr><br>
+      
+      <fieldset>
+          <legend><span class="QnA"><i class="fa-solid fa-q"></i>7.</span>What was the original name of the State Bank of India (SBI) before it was nationalized in 1955?</legend>
+          <label><input type="radio" name="q7" value="a"><span class="choice">Sovereign Bank of India</span></label><br>
+          <label><input type="radio" name="q7" value="b"><span class="choice">Colonial Bank of India</span></label><br>
+          <label><input type="radio" name="q7" value="c"><span class="choice">Imperial Bank of India</span></label><br>
+          <label><input type="radio" name="q7" value="d"><span class="choice">National Bank of India</span></label><br><br>
+      </fieldset>
+      <hr><br>
+      
+      <fieldset>
+          <legend><span class="QnA"><i class="fa-solid fa-q"></i>8.</span>Which one of the following is not the characteristics of mutual funds?</legend>
+          <label><input type="radio" name="q8" value="a"><span class="choice">Consistent Investment process</span></label><br>
+          <label><input type="radio" name="q8" value="b"><span class="choice">Strong fund management</span></label><br>
+          <label><input type="radio" name="q8" value="c"><span class="choice">Diversity in interest rates</span></label><br>
+          <label><input type="radio" name="q8" value="d"><span class="choice">Differences from the benchmark</span></label><br><br>
+      </fieldset>
+      <hr><br>
+      
+      <fieldset>
+          <legend><span class="QnA"><i class="fa-solid fa-q"></i>9.</span>When was the Goods and Services Tax (GST) implemented in India?</legend>
+          <label><input type="radio" name="q9" value="a"><span class="choice">2005</span></label><br>
+          <label><input type="radio" name="q9" value="b"><span class="choice">2017</span></label><br>
+          <label><input type="radio" name="q9" value="c"><span class="choice">2014</span></label><br>
+          <label><input type="radio" name="q9" value="d"><span class="choice">1998</span></label><br><br>
+      </fieldset>
+      <hr><br>
+      
+      <fieldset>
+          <legend><span class="QnA"><i class="fa-solid fa-q"></i>10.</span>In trading, what does a <i>breakout</i> above resistance typically suggest?</legend>
+          <label><input type="radio" name="q10" value="a"><span class="choice">Potential upward momentum</span></label><br>
+          <label><input type="radio" name="q10" value="b"><span class="choice">Potential downward movement</span></label><br>
+          <label><input type="radio" name="q10" value="c"><span class="choice">Always leads to a reversal</span></label><br>
+          <label><input type="radio" name="q10" value="d"><span class="choice">No significance to market trends</span></label>
+      </fieldset>
+      <br><br>
+      
+        <hr><br>
+      
+        <p style="text-align: center;">
+          <input type="submit" value="Submit" class="accept">
+        </p>
+      </form>
+
+<br>
+</div>
+
+<!-- Result Modal -->
+<div id="overlay"></div>
+<div id="resultModal">
+  <h2>Quiz Result</h2>
+  <p id="scoreMessage" class="text-center"></p>
+  <p style="text-align: center;">
+    <button onclick="closeModal()" class="close">Close</button>
+  </p>
+  <p class="para" style="text-align: center;">Correct Answers :</p>
+  <table style="width: auto;" class="mx-auto">
+    <tr>
+      <td>‎ 1-B</td>
+      <td>‎ 6-A</td>
+    </tr>
+    <tr>
+      <td>‎ 2-C</td>
+      <td>‎ 7-C</td>
+    </tr>
+    <tr>
+      <td>‎ 3-B</td>
+      <td>‎ 8-C</td>
+    </tr>
+    <tr>
+      <td>‎ 4-A</td>
+      <td>‎ 9-B</td>
+    </tr>
+    <tr>
+      <td>‎ 5-B</td>
+      <td>10-A</td>
+    </tr>
+  </table>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+
+<button id="button" style="display: none;">Celebrate!!!</button>
+
+
+<script>
+    document.getElementById("quizForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevents the default form submission
+      
+      // Array of correct answers
+      const correctAnswers = ["b", "c", "b", "a", "b", "a", "c", "c", "b", "a"];
+      
+      // Get user's selected answers
+      const userAnswers = [];
+      for (let i = 1; i <= 10; i++) {
+        const selectedOption = document.querySelector(`input[name="q${i}"]:checked`);
+        if (selectedOption) {
+          userAnswers.push(selectedOption.value);
+        }
+      }
+    
+      // Check user's answers and calculate the score
+      let score = 0;
+      for (let i = 0; i < correctAnswers.length; i++) {
+        if (userAnswers[i] === correctAnswers[i]) {
+          score++;
+        }
+      }
+    
+      // Display the result in the modal
+      const resultMessage = `You scored ${score} out of 10`;
+      document.getElementById("scoreMessage").textContent = resultMessage;
+      openModal();
+    
+      // Trigger the button click
+      document.getElementById("button").click();
+    });
+    
+    function openModal() {
+      document.getElementById("overlay").style.display = "block";
+      document.getElementById("resultModal").style.display = "block";
+    }
+    
+    function closeModal() {
+      document.getElementById("overlay").style.display = "none";
+      document.getElementById("resultModal").style.display = "none";
+      document.getElementById("quizForm").reset(); // Reset the form
+    }
+</script>
+
+
+<script>
+// confetti
+const button = document.querySelector('#button');
+const canvas = document.querySelector('#confetti');
+
+const jsConfetti = new JSConfetti();
+
+button.addEventListener('click', () => {
+    jsConfetti.addConfetti({
+    })
+})
+</script>
+
+<footer id="footer" class="footer-1">
+      
+    <div style="display: flex; align-items: center; justify-content: center; flex-direction: column" class="py-2">
+       <a href="tel:+917082667333" style="color: white;">Ph.: <span style="color: #ffffffc2;">+91-</span><span class="underline" style="color: #ffffffc2;">7082667333</span></a>
+       <a href="mailto:contact@hsjnfinwisdom.com" style="color: white;"><i class="fa-solid fa-envelope"></i> <span class="underline" style="color: #ffffffc2;">contact@hsjnfinwisdom.com</span></a>
+    </div>
+
+    <div class="footer-copyright">
+    <div class="container">
+    <div class="row">
+    <div class="col-md-12 text-center">
+    <p style="color: white;"><small style="font-size: 13px;">
+        HSJN FinWisdom Private Limited
+      © 2023 
+      | All Rights Reserved |
+    </small></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+</footer>
+
+<!-- end -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body></html>
