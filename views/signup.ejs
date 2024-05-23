@@ -163,7 +163,7 @@ function phoneAuth() {
       coderesult = confirmationResult;
       loginForm.style.display = 'none';
       otpVerification.style.display = 'block';
-      errorMessage.textContent = '';
+      errorMessage.textContent = 'Sending OTP...';
     }).catch(function(error){
       alert(error.message);
     });
