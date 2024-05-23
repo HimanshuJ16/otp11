@@ -61,52 +61,14 @@
       </p>
       <p style="text-align: left;">
         <a href="/pdf">
-          <button class="tweet" style="padding: 5px 15px;">Sign Up for FREE to access E-Books</button>
-
+          <% if(user) { %>
+          <button class="tweet" style="padding: 5px 15px;">Get your FREE E-Books</button>
+          <% } else { %>
+            <button class="tweet" style="padding: 5px 15px;">Sign Up for FREE to access E-Books</button>
+          <% } %>
         </a>
 </div>
 </div><br>
-
-    <!-- Add the Firebase scripts -->
-    <!-- <script type="module">
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-      import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
-  
-      const firebaseConfig = {
-        apiKey: "AIzaSyCFYXehELutvNeRJWY5e6FOWFGBAM0eCzw",
-        authDomain: "vaibhav-c0c9f.firebaseapp.com",
-        projectId: "vaibhav-c0c9f",
-        storageBucket: "vaibhav-c0c9f.appspot.com",
-        messagingSenderId: "635216546328",
-        appId: "1:635216546328:web:963e2a70ae4b112139d16d",
-        measurementId: "G-MGF28YQQG1"
-      };
-  
-      const app = initializeApp(firebaseConfig);
-      const auth = getAuth(app);
-  
-    </script> -->
-
-  <!--Firebase UI library -->
-  <!-- <script type="module">
-    import { getAuth, GoogleAuthProvider, signInWithPopup } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
-
-    const authSecondScript = getAuth(); // Use a different variable name
-
-    const googleSignInBtn = document.getElementById('googleSignInBtn');
-
-    googleSignInBtn.addEventListener('click', () => {
-      const provider = new GoogleAuthProvider();
-      signInWithPopup(authSecondScript, provider)
-        .then((result) => {
-          // Redirect to the logged.html page upon successful sign-in
-          window.location.href = "PDF.html";
-        })
-        .catch((error) => {
-          console.error(error.message);
-        });
-    });
-  </script> -->
 
 <div data-aos="fade-up">
 <div class="container">

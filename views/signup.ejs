@@ -177,7 +177,7 @@ function codeverify() {
       const expires = new Date(Date.now() + 60 * 60 * 24 * 1000);
       document.cookie = `firebaseToken=${token}; expires=${expires.toUTCString()}`;
       otpMessage.textContent = "Success";
-      window.location.href = '/pdf';
+      window.location.href = '/';
     })
   }).catch(function () {
     console.log('OTP Not correct');

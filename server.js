@@ -35,15 +35,19 @@ const verifyToken = async(req, res, next) => {
   }
 };
 
-// Protected route example
-// app.get('/protected-data', verifyToken, (req, res) => {
-//   // Access user data from req.user
-//   const uid = req.user.uid;
-//   // Simulate fetching protected data based on user ID
-//   const protectedData = `Protected data for user ${uid}`;
-//   res.json({ message: protectedData });
-// });
+const checkUser = async(req, res, next) => {
+  try {
+    const idToken = req.cookies.firebaseToken;
+    const user = await admin.auth().verifyIdToken(idToken);
+    res.locals.user = user;
+    next();
+  } catch (error) {
+    res.locals.user = null;
+    next();
+  }
+};
 
+app.get('*', checkUser)
 app.get('/', (req, res) => res.render('home'));
 app.get('/quiz', verifyToken, (req, res) => res.render('quiz'));
 app.get('/demat-account', (req, res) => res.render('demat-account'));
